@@ -1,10 +1,12 @@
 <?php
+// подключение к бд
 session_start();
 require "db.php";
 $login = $_POST['login'];
 $email = $_POST['email'];
 $password = $_POST['password'];
 $repassword = $_POST['repassword'];
+// обработка формы входа
 if (isset($_POST['submit_login'])) {
     $resultlogin = mysqli_query($link, "SELECT * FROM `user` WHERE (`login` = '$login' OR `email`='$login') AND `password` = '$password'");
     if (mysqli_num_rows($resultlogin) > 0) {
@@ -24,7 +26,7 @@ if (isset($_POST['submit_login'])) {
     }
 }
 
-
+// обработка формы регистрации 
 if (isset($_POST['submit_reg'])) {
 
     $checkuser = mysqli_query($link, "SELECT * FROM `user` WHERE `login` = '$login' OR `email`='$email'");

@@ -34,8 +34,8 @@ if (isset($_SESSION['user'])) {
                 <a href="index.php">Главная</a>
                 <a href="auto.php">Авторизация</a>
                 <a href="reg.php">Регистрация</a>
-                <a href="catalog.php">Каталог</a>
                 <a href="aboutus.php">Где мы</a>
+                <a href="index.php">Каталог</a>
             <?php endif; ?>
             <?php if (isset($user['login'])) : ?>
                 <!-- Вывод имени пользователя в шапке сайта -->
@@ -44,66 +44,34 @@ if (isset($_SESSION['user'])) {
        
     </nav>
 </header>
-
-
-<div id="main">
+    
+    <div id="main">
         <div class="intro">
-          <h2>Прекрасное ассорти пончиков!</h2>
-          <img src="img/gleb3.jpg" alt="">
+            <h2>Наш адресс!</h2>
+            <img src="https://avatars.mds.yandex.net/get-altay/1899727/2a00000186b7f5b1e1da6507ab47cf7242f1/XXXL" alt="">
         </div>
         <div class="text">
-          <span>Это идеальное сочетание пышности, мягкости, жирности.
-Это выгодный размер самого пончика как для меня, чтобы я мог платить аренду, зарплату, другие расходы и быть в прибыли, так и для вас 
-Пытался добиться пышности и мягкости. Чтобы Вы в любой момент могли приехать и пончик был идеальный. СЧИТАЮ У МЕНЯ ЭТО ПОЛУЧИЛИСЬ.</span>
-        
+            <span><p>Интернациональная улица, 10/2, Омск</span>
+            <span><p>Открыто до 19:00</span>
+            <span><p>+7 (913) 601-25-01</span>
         </div>
-      </div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <div style="position:relative; overflow:hidden;">
+            <a href="https://yandex.ru/maps/org/ponchiki_ot_gleba/47836400324/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Пончики от Глеба</a>
+            <a href="https://yandex.ru/maps/66/omsk/category/bakery/184106798/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;">Пекарня в Омске</a>
+            <a href="https://yandex.ru/maps/66/omsk/category/confectionary/184108017/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:28px;">Кондитерская в Омске</a>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=73.365701%2C54.991105&mode=search&oid=47836400324&ol=biz&z=15.33" width="1200" height="600" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+    </div>
     
-      <div id="overview">
-        <h2>С 19:00 до 20:00 </h2>
-        <h4>пончики со скидкой</h4>
-    
-        <div class="img">
-          <img src="img/p6.jpg" alt="">
-          <span>Мягкие</span>
-        </div>
-        <div class="img">
-          <img src="img/p5.jpg" alt="">
-          <span>Вкусные</span>
-        </div>
-        <div class="img">
-          <img src="img/42r.jpg" alt="">
-          <span>Мороженное по 42р</span>
-        </div>
-        <div class="img">
-          <img src="img/gleb.jpg" alt="">
-          <span>Готовим сами</span>
-        </div>
-        <div class="img">
-          <img src="img/p1.jpg" alt="">
-          <span>Быстрая доставка</span>
-        </div>
-        <div class="img">
-          <img src="img/p2.jpg" alt="">
-          <span>Лучшее обслуживание</span>
-        </div>
-      </div>
-        
-    
-
-    
-    
-      
-
     <footer>
-        <p>Номер телефона: +7 (913) 601-25-01</p>
+        <p>Номер телефона: +7 (123) 456-78-90</p>
         <div class="social-icons">
-            <a href="https://vk.com/club218529547"><img src="img/vk.png" alt="vk"></a>
+            <a href="#"><img src="img/vk.png" alt="Facebook"></a>
             <a href="#"><img src="img/inst.png" alt="Twitter"></a>
             <a href="#"><img src="img/odnoklassniki.png" alt="Instagram"></a>
         </div>
     </footer>
-    
 </body>
 </html>
-
